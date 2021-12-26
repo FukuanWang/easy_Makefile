@@ -1,10 +1,13 @@
-#pragma once
+#ifndef __HEADER2_H__
+#define __HEADER2_H__
 
 #include <stdio.h>
 
-#define __HEADER_2__
 
 /*
- * define a function to show process name
+ * define a function to show arguments
  */
-void show_myname(char*);
+void show_arguments(int, char**);
+
+
+#endif

@@ -1,11 +1,15 @@
 ##########################################################################
-# Author		: Fukuan
-# Date			: 2021-12-25
+# This is an easy Makefile template for build exe target or so target    #
+# Author		: Fukuan                                                 #
+# Date			: 2021-12-25                                             #
 ##########################################################################
 
 ##########################################################################
 #                         user definition part                           #
 ##########################################################################
+
+# current path
+CUR_DIR 		:= $(shell pwd)
 
 #here determine your target name
 TARGET			:= test
@@ -20,13 +24,11 @@ COMPILER		:= g++
 
 # here add neccessary libraries
 # .so or .a 
-LIBS			:=
+LIBS			:= -L$(CUR_DIR)/ -L$(CUR_DIR)/libs
 
 # here determin system root
 SYSROOT 		:= 
 
-# current path
-CUR_DIR 		:= $(shell pwd)
 
 #include path
 #you can add your own include path below

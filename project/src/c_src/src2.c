@@ -11,3 +11,4 @@ void show_arguments(int argc, char** argv) {
 		fprintf(stdout, "%s\n", argv[it]);
 	}
 }
+

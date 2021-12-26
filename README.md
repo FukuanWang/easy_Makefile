@@ -3,10 +3,12 @@
 2. This Makefile can be used for generating   
 	- executed target  
 	- .so target  
-	by configurating the TGT_TYPE  
-3. if target is a executable file, a soft link of target file will be established in your current workspace.  
+   by configurating the TGT_TYPE  
+3. if target is an executable file, a soft link of target file will be established in your current workspace.  
+4. use 'make' or 'make all' to build your target or 'make clean' to remove out files.
   
-## example  
+## example 
+an example for build an executable target:   
 - project tree before make  
 	.  
 	├── include  
